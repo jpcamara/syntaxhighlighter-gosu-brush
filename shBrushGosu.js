@@ -22,7 +22,6 @@
 	function Brush()
 	{
 		// Created by JP Camara @ www.jpcamara.com
-		
 		var keywords =	
 						'abstract assert boolean break byte case catch char class ' +
 						'continue do double else enum extends ' +
