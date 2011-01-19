@@ -21,7 +21,7 @@
 
 	function Brush()
 	{
-		// Created by JP Camara @ www.jpcamara.com
+		// Created by JP Camara @ www.jpcamara.com - takes from the AS3 and Java brushes
 		var keywords =	
 						'abstract assert boolean break byte case catch char class ' +
 						'continue do double else enum extends ' +
