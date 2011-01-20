@@ -73,22 +73,22 @@
         <span class="sectionTitle">Syntax</span>
         <p>It lets you change this:</p>
 				<pre>
-			classpath ".."
+classpath ".."
 			
-			uses java.lang.Integer
+uses java.lang.Integer
 			
-			var list = {1, 2, 3}
-			var map = {"a" -> "b"}
+var list = {1, 2, 3}
+var map = {"a" -> "b"}
 			
-			class MyClass {
-				var _data : String as Data
-				var _lists : List&lt;String&gt; as Lists
-			}
+class MyClass {
+	var _data : String as Data
+	var _lists : List&lt;String&gt; as Lists
+}
 			
-			var mine = new MyClass() {
-				:Data = "some data",
-				:Lists = {"list", "of", "data"}
-			}
+var mine = new MyClass() {
+	:Data = "some data",
+	:Lists = {"list", "of", "data"}
+}
 				</pre>
 				<p>Into this:</p>
 				<pre class="brush: js">
