@@ -45,7 +45,7 @@
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },		// strings
 			{ regex: /\b([\d]+(\.[\d]+)?|0x[a-f0-9]+)\b/gi,				css: 'value' },			// numbers
 			{ regex: /\@[\$\w]+\b/g,					css: 'color1' },		// annotation @anno
-			{ regex: /(?!\)):[\$\w]+/g,					css: 'color3' },		// named params and object construct
+			{ regex: /(?!\)):[\w]+\s?(?==)/g,					css: 'color3' },		// named params and object construct
 			// { regex: new RegExp(this.getKeywords(common), 'gm'),				css: 'color2' },			// common classes
 			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),		css: 'keyword' }		// gosu keywords
 			];
