@@ -81,13 +81,9 @@ var list = {1, 2, 3}
 var map = {"a" -> "b"}
 			
 class MyClass implements List&lt;Integer&gt; {
-	delegate _ints represents List&lt;Integer&gt;
+	delegate _ints represents List&lt;Integer&gt; = {}
 	var _data : String as Data
 	var _lists : List&lt;String&gt; as Lists
-	
-	construct() {
-		_ints = {}
-	}
 }
 			
 var mine = new MyClass() {
@@ -106,13 +102,9 @@ mine.add(1)
 					var map = {"a" -> "b"}
 
 					class MyClass implements List&lt;Integer&gt; {
-						delegate _ints represents List&lt;Integer&gt;
+						delegate _ints represents List&lt;Integer&gt; = {}
 						var _data : String as Data
 						var _lists : List&lt;String&gt; as Lists
-
-						construct() {
-							_ints = {}
-						}
 					}
 
 					var mine = new MyClass() {
