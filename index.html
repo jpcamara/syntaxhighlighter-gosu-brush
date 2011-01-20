@@ -80,34 +80,46 @@ uses java.lang.Integer
 var list = {1, 2, 3}
 var map = {"a" -> "b"}
 			
-class MyClass {
+class MyClass implements List&lt;Integer&gt; {
+	delegate _ints represents List&lt;Integer&gt;
 	var _data : String as Data
 	var _lists : List&lt;String&gt; as Lists
+	
+	construct() {
+		_ints = {}
+	}
 }
 			
 var mine = new MyClass() {
 	:Data = "some data",
 	:Lists = {"list", "of", "data"}
 }
+mine.add(1)
 				</pre>
 				<p>Into this:</p>
-				<pre class="brush: js">
-			classpath ".." 
+				<pre class="brush: gs">
+					classpath ".."
 
-			uses java.lang.Integer
+					uses java.lang.Integer
 
-			var list = {1, 2, 3}
-			var map = {"a" -> "b"}
+					var list = {1, 2, 3}
+					var map = {"a" -> "b"}
 
-			class MyClass {
-				var _data : String as Data
-				var _lists : List&lt;String&gt; as Lists
-			}
+					class MyClass implements List&lt;Integer&gt; {
+						delegate _ints represents List&lt;Integer&gt;
+						var _data : String as Data
+						var _lists : List&lt;String&gt; as Lists
 
-			var mine = new MyClass() {
-				:Data = "some data",
-				:Lists = {"list", "of", "data"}
-			}					
+						construct() {
+							_ints = {}
+						}
+					}
+
+					var mine = new MyClass() {
+						:Data = "some data",
+						:Lists = {"list", "of", "data"}
+					}
+					mine.add(1)	
 				</pre>
       </div>
     </div>
