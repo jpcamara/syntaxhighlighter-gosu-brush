@@ -1,7 +1,9 @@
-<html>
+
+ 
+<html> 
   <head> 
-    <title>Gosu for SyntaxHighlighter</title> 
-    <style TYPE="text/css">
+    <title>Protocols For Gosu</title> 
+    <style TYPE="text/css"> 
        <!--
        body { font-family: Helvetica,sans-serif;
               background: white;
@@ -22,7 +24,7 @@
        }
        .links {
          height: 100%;
-         padding: 0 16px 0 0;
+         padding: 0 18px 0 0;
          font-size: 14pt;
          float: left;
          border-right: 1px solid;
@@ -32,7 +34,7 @@
        }
        .content {
          padding-top: 8px;
-         padding-left: 200px;
+         padding-left: 210px;
          color: black;
          font-size: 12pt;
        }
@@ -49,88 +51,91 @@
        a:visited { color: #ff8080; }
        a:active { color: #a05050; }
         -->
-     </style>
+     </style> 
   </head> 
   <body> 
     <div class="header"><span class="title">Gosu for SyntaxHighlighter</span></div>
-    <div>
-      <div class="links">
-        <ul> 
+    <div> 
+      <div class="links"> 
+				<ul> 
           <li>Downloads:</li> 
           <ul> 
             <li><a href="https://github.com/downloads/jpcamara/SyntaxHighlighter-Gosu-Brush/shBrushGosu.js">Gosu Brush</a></li>
           </ul> 
           <li><a href="https://github.com/jpcamara/SyntaxHighlighter-Gosu-Brush">Source</a></li> 
           <li><a href="https://github.com/jpcamara/SyntaxHighlighter-Gosu-Brush/issues">Issues</a></li> 
-        </ul> 
-      </div>
-      <div class="content">
-        <span class="sectionTitle">Overview</span>
-        <p>This brush allows you to add Gosu syntax highlighting to a page, when using the <a href="http://alexgorbatchev.com/SyntaxHighlighter/">Syntax Highlighter</a> by Alex Gorbatchev.</p>
-        <span class="sectionTitle">Syntax</span>
-        <p>It lets you change this:</p>
-				<pre>
+        </ul>
+      </div> 
+      <div class="content"> 
+				        <span class="sectionTitle">Overview</span>
+				        <p>This brush allows you to add Gosu syntax highlighting to a page, when using the <a href="http://alexgorbatchev.com/SyntaxHighlighter/">Syntax Highlighter</a> by Alex Gorbatchev.</p>
+				        <span class="sectionTitle">Syntax</span>
+				        <p>It lets you change this:</p>
+								<pre>
 classpath ".."
-			
+
 uses java.lang.Integer
-			
+
 var list = {1, 2, 3}
 var map = {"a" -> "b"}
-			
+
 class MyClass implements List&lt;Integer&gt; {
 	delegate _ints represents List&lt;Integer&gt; = {}
 	var _data : String as Data
 	var _lists : List&lt;String&gt; as Lists
 }
-			
+
 var mine = new MyClass() {
 	:Data = "some data",
 	:Lists = {"list", "of", "data"}
 }
 mine.add(1)
-				</pre>
-				<p>Into this:</p>
-				<pre class="brush: gs">
-					classpath ".."
+								</pre>
+								<p>Into this:</p>
+								<pre class="brush: gs">
+									classpath ".."
 
-					uses java.lang.Integer
+									uses java.lang.Integer
 
-					var list = {1, 2, 3}
-					var map = {"a" -> "b"}
+									var list = {1, 2, 3}
+									var map = {"a" -> "b"}
 
-					class MyClass implements List&lt;Integer&gt; {
-						delegate _ints represents List&lt;Integer&gt; = {}
-						var _data : String as Data
-						var _lists : List&lt;String&gt; as Lists
-					}
+									class MyClass implements List&lt;Integer&gt; {
+										delegate _ints represents List&lt;Integer&gt; = {}
+										var _data : String as Data
+										var _lists : List&lt;String&gt; as Lists
+									}
 
-					var mine = new MyClass() {
-						:Data = "some data",
-						:Lists = {"list", "of", "data"}
-					}
-					mine.add(1)	
-				</pre>
-				<span class="sectionTitle">Installation</span>
-			  <p>Installation of SyntaxHighlighter is described <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">here</a>. To add in the Gosu highlighter, simply <a href="https://github.com/downloads/jpcamara/SyntaxHighlighter-Gosu-Brush/shBrushGosu.js">download</a> this script and then include it after you include the syntax highlighter core files. for instance:</p>
-				<pre class="brush: js; highlight: [4]; html-script: true">
-				&lt;link href=&quot;your/path/to/styles/shCore.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-				&lt;link href=&quot;your/path/to/styles/shThemeDefault.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-				&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/scripts/shCore.js&quot;&gt;&lt;/script&gt;
-				&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/shBrushGosu.js&quot;&gt;&lt;/script&gt;
-				&lt;script type=&quot;text/javascript&quot;&gt;
-					SyntaxHighlighter.all();
-				&lt;/script&gt;
-				</pre>
-      </div>
-    </div>
+									var mine = new MyClass() {
+										:Data = "some data",
+										:Lists = {"list", "of", "data"}
+									}
+									mine.add(1)	
+								</pre>
+								<span class="sectionTitle">Installation</span>
+							  <p>Installation of SyntaxHighlighter is described <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">here</a>. To add in the Gosu highlighter, simply <a href="https://github.com/downloads/jpcamara/SyntaxHighlighter-Gosu-Brush/shBrushGosu.js">download</a> this script and then include it after you include the syntax highlighter core files. for instance:</p>
+								<pre class="brush: js; highlight: [4]; html-script: true">
+								&lt;link href=&quot;your/path/to/styles/shCore.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+								&lt;link href=&quot;your/path/to/styles/shThemeDefault.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+								&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/scripts/shCore.js&quot;&gt;&lt;/script&gt;
+								&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/shBrushGosu.js&quot;&gt;&lt;/script&gt;
+								&lt;script type=&quot;text/javascript&quot;&gt;
+									SyntaxHighlighter.all();
+								&lt;/script&gt;
+								</pre>
+				      </div>
+				    </div>
+				  </body> 
+					<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+					<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+					<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"></script>
+					<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js"></script>
+					<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js"></script>
+					<script type="text/javascript" src="https://github.com/jpcamara/SyntaxHighlighter-Gosu-Brush/raw/master/shBrushGosu.js"></script>
+					<script type="text/javascript">
+						SyntaxHighlighter.all();
+					</script>
+      </div> 
+    </div> 
   </body> 
-	<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
-	<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"></script>
-	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js"></script>
-	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js"></script>
-	<script type="text/javascript" src="https://github.com/jpcamara/SyntaxHighlighter-Gosu-Brush/raw/master/shBrushGosu.js"></script>
-	<script type="text/javascript">
-		SyntaxHighlighter.all();
-	</script>
 </html>
