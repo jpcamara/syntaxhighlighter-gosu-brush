@@ -60,7 +60,7 @@
         <ul> 
           <li>Downloads:</li> 
           <ul> 
-            <li><a href="https://github.com/downloads/jpcamara/SyntaxHighlighter-Gosu-Brush/shBrushGosu.js">Brush JS</a></li>
+            <li><a href="https://github.com/downloads/jpcamara/SyntaxHighlighter-Gosu-Brush/shBrushGosu.js">Gosu Brush</a></li>
           </ul> 
           <li><a href="https://github.com/jpcamara/SyntaxHighlighter-Gosu-Brush">Source</a></li> 
           <li><a href="https://github.com/jpcamara/SyntaxHighlighter-Gosu-Brush/issues">Issues</a></li> 
@@ -68,24 +68,7 @@
       </div>
       <div class="content">
         <span class="sectionTitle">Overview</span>
-        <p>This brush allows you to add Gosu syntax highlighting to a page, when using the 
-	<a href="http://alexgorbatchev.com/SyntaxHighlighter/">Syntax Highlighter</a> by Alex Gorbatchev.</p>
-				<span class="sectionTitle">Installation</span>
-        <p>Installation of SyntaxHighlighter is described 
-	<a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">here</a>. To add in the Gosu 
-	highlighter, simply 
-	<a href="https://github.com/downloads/jpcamara/SyntaxHighlighter-Gosu-Brush/shBrushGosu.js">download</a> this script
-	and then include it after you include with the syntax highlighter core files. for instance:</p>
-	<pre class="brush: js">
-	&lt;link href=&quot;your/path/to/styles/shCore.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-	&lt;link href=&quot;your/path/to/styles/shThemeDefault.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-	&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/scripts/shCore.js&quot;&gt;&lt;/script&gt;
-	&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/shBrushGosu.js&quot;&gt;&lt;/script&gt;
-	&lt;script type=&quot;text/javascript&quot;&gt;
-		SyntaxHighlighter.all();
-	&lt;/script&gt;
-	</pre>
-	
+        <p>This brush allows you to add Gosu syntax highlighting to a page, when using the <a href="http://alexgorbatchev.com/SyntaxHighlighter/">Syntax Highlighter</a> by Alex Gorbatchev.</p>
         <span class="sectionTitle">Syntax</span>
         <p>It lets you change this:</p>
 				<pre>
@@ -129,6 +112,17 @@ mine.add(1)
 					}
 					mine.add(1)	
 				</pre>
+				<span class="sectionTitle">Installation</span>
+			  <p>Installation of SyntaxHighlighter is described <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">here</a>. To add in the Gosu highlighter, simply <a href="https://github.com/downloads/jpcamara/SyntaxHighlighter-Gosu-Brush/shBrushGosu.js">download</a> this script and then include it after you include the syntax highlighter core files. for instance:</p>
+				<pre class="brush: js; highlight: [4]; html-script: true">
+				&lt;link href=&quot;your/path/to/styles/shCore.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+				&lt;link href=&quot;your/path/to/styles/shThemeDefault.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+				&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/scripts/shCore.js&quot;&gt;&lt;/script&gt;
+				&lt;script type=&quot;text/javascript&quot; src=&quot;your/path/to/shBrushGosu.js&quot;&gt;&lt;/script&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+					SyntaxHighlighter.all();
+				&lt;/script&gt;
+				</pre>
       </div>
     </div>
   </body> 
@@ -136,6 +130,7 @@ mine.add(1)
 	<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"></script>
 	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js"></script>
 	<script type="text/javascript" src="https://github.com/jpcamara/SyntaxHighlighter-Gosu-Brush/raw/master/shBrushGosu.js"></script>
 	<script type="text/javascript">
 		SyntaxHighlighter.all();
